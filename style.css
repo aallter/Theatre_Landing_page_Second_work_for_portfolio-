@@ -200,6 +200,7 @@ header{
 .about h2{
     width: 100%;
     text-align: center;
+    letter-spacing: 0.05em;
 }
 .about{
     justify-content: center;
@@ -235,6 +236,62 @@ span>span{
     font-weight:inherit;
 }
 
+/*Slide Block*/
+.slide-block{
+    overflow: hidden;
+}
+.slide-block h2{
+    text-align: center;
+    cursor: pointer;
+}
+.img-slide{
+    position: relative;
+    width: 33.3%;
+    height:auto;
+    float: left;
+    cursor: pointer;
+}
+.img-slide img{
+    width: 100%;
+}
+#fspan{
+    position: absolute;
+    top:5%;
+    left:10%;
+    text-transform: uppercase;
+}
+#sspan{
+    position: absolute;
+    top:70%;
+    left:0%;
+    transform:rotate(-90deg);
+    text-transform: uppercase;
+}
+.img-slide:hover img~span{
+    display: none;
+}
+.carousel-inner{
+    margin-left: 7%;
+}
+.carousel{
+    width:90%;
+    padding: 7% 0%;
+}
+.img-slide span+img{
+    display: none;
+    position: absolute;
+    top:45%;
+    left:40%;
+    width:20%;
+    transition: .5s;
+    cursor: pointer;
+}
+.img-slide span+img:hover{
+    width:22%;
+}
+.img-slide:hover img{
+    display: block;
+}
 
   /*media */
   @media (max-width:1220px){
