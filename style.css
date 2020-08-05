@@ -13,8 +13,12 @@ p{
 }
 h1,h2,h3,h4,h5,h6,span,li,button{
     font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
 }
 h1{
+    font-weight: 700;
+}
+h3{
     font-weight: 700;
 }
 span{
@@ -108,7 +112,7 @@ header{
   }
   .butt-prev-slide button{
       background: none;
-      margin-left: -20px;
+      margin-left: 0px;
       overflow: hidden;
   }
   /*fixed panel*/
@@ -176,6 +180,61 @@ header{
       cursor: pointer;
   }
 
+#prev-slider{
+    position: relative;
+}
+#prev-slider ul li{
+    position: relative;
+    z-index: 3;
+}
+.imgBack{
+    position: absolute;
+    top:45px;
+    left:50px;
+    width:250px;
+    height: 370px;
+    z-index: 0;
+}
+
+/*Block about*/
+.about h2{
+    width: 100%;
+    text-align: center;
+}
+.about{
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 7% 0%;
+}
+.info-about-theater,.info-about-theater-place{
+    width: 30%;
+    margin-top: 100px;
+}
+.about section h3{
+    padding-bottom: 5%;
+}
+#pictureAbout{
+    display:block;
+    margin-top: 100px;
+}
+.info-about-theater-place{
+    box-sizing: border-box;
+    padding-left: 5%;
+}
+.info-about-theater-place img{
+    display: block;
+    padding: 5% 0%;
+}
+h2>span{
+    color:#D1A954;
+    font-weight:inherit;
+}
+span>span{
+    color:#D1A954;
+    font-weight:inherit;
+}
+
 
   /*media */
   @media (max-width:1220px){
@@ -185,8 +244,21 @@ header{
     .fixed-panel{
         top:28%;
       }
+      #pictureAbout{
+        display:none;
+    }
   }
   @media (max-width:992px){
+    .info-about-theater-place img{
+        padding: 2% 0%;
+    }
+    .info-about-theater,.info-about-theater-place{
+        width: 40%;
+        margin-left: 50px;
+    }
+    .info-about-theater p{
+        font-size: 12px;
+    }
     nav ul{
        width:100%;
       }
@@ -198,6 +270,17 @@ header{
     }
   }
   @media (max-width:768px){
+    .info-about-theater-place img{
+        display: block;
+        padding: 2% 0%;
+    }
+    .info-about-theater,.info-about-theater-place{
+        width: 50%;
+        margin-left: 0px;
+    }
+    .info-about-theater{
+        padding-left: 5%;
+    }
     nav{
         justify-content: space-between;
         padding: 2% 8%;
@@ -225,6 +308,23 @@ header{
         display: block;
     }
   }
+
+  @media (max-width:576px){
+    .info-about-theater,.info-about-theater-place{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .info-about-theater{
+        text-align: center;
+        padding-left: 0%;
+        padding:2% ;
+    }
+    .info-about-theater-place h3{
+        width: 100%;
+        text-align: center;
+    }
+  }
+
   @media (max-height:600px){
     header{
       height:100%;
