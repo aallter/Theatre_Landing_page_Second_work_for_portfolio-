@@ -293,6 +293,43 @@ span>span{
     display: block;
 }
 
+
+/*Stars info years Paris*/
+.best{
+    background-image: url(img/infoParis.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 93%;
+    margin:5% 0% 5% 5%;    
+}
+.yearsInfo{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10%;
+}
+.years p{
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    color: #D1A954;
+}
+.stars-info p{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+}
+.stars-info img+p:first-of-type{
+    margin-top: 50px !important;
+}
+.stars-info{
+    margin-left: 100px;
+}
+
+
   /*media */
   @media (max-width:1220px){
     #prev-slider{
@@ -303,6 +340,14 @@ span>span{
       }
       #pictureAbout{
         display:none;
+    }
+    .years p{
+        font-size: 40px;
+        line-height: 38px;
+    }
+    .stars-info p{
+        font-size: 20px;
+        line-height: 50%;
     }
   }
   @media (max-width:992px){
@@ -327,6 +372,16 @@ span>span{
     }
   }
   @media (max-width:768px){
+   
+      .stars-info img{
+          width:40%;
+      }
+    .years p{
+        font-size: 20px;
+    }
+    .stars-info p{
+        font-size: 14px;
+    }
     .info-about-theater-place img{
         display: block;
         padding: 2% 0%;
@@ -367,6 +422,23 @@ span>span{
   }
 
   @media (max-width:576px){
+      #sspan{
+          font-size: 10px;
+      }
+    .stars-info p{
+        font-size: 14px;
+        line-height: 80%;
+    }
+    .stars-info img+p:first-of-type{
+        margin-top: 0px !important;
+    }
+    .stars-info{
+        margin-left: 70px;
+        width: 50%;
+    }
+    .yearsInfo{
+        padding: 3%;
+    }
     .info-about-theater,.info-about-theater-place{
         width: 100%;
         margin-top: 30px;
@@ -376,9 +448,15 @@ span>span{
         padding-left: 0%;
         padding:2% ;
     }
-    .info-about-theater-place h3{
+    .info-about-theater-place{
         width: 100%;
         text-align: center;
+    }
+    .info-about-theater-place img{
+        margin-left: 40%;
+    }
+    .menu-window a img{
+        width: 30%;
     }
   }
 
