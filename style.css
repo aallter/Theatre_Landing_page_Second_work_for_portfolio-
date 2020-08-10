@@ -330,6 +330,36 @@ span>span{
 }
 
 
+/*gazprom block*/
+.gazprom{
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 5%;
+}
+.gazprom img{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 3%;
+}
+
+/*footer*/
+footer{
+    justify-content: space-between;
+    align-content: center;
+}
+footer{
+    box-sizing: border-box;
+    padding: 2% 7% 2% 7% ;
+    border-top: 1px solid grey;
+}
+footer p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #989898;
+}
+
+
   /*media */
   @media (max-width:1220px){
     #prev-slider{
@@ -422,6 +452,11 @@ span>span{
   }
 
   @media (max-width:576px){
+    .gazprom img{
+        width: 50%;
+        box-sizing: border-box;
+        padding: 7%;
+    }
       #sspan{
           font-size: 10px;
       }
