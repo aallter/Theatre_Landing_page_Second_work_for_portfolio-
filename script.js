@@ -64,3 +64,47 @@ let predImg =() =>{
 //func click
 butRight.addEventListener('click',nextImg);
 butLeft.addEventListener('click',predImg);
+
+
+/*Плавный переход по якорным ссылкам*/
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const blockID = anchor.getAttribute('href').substr(1)
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start', inline: 'start'
+    })
+  })
+}
+
+/*Validation form */
+let btn = document.querySelectorAll("form input.but-send");
+
+btn.forEach(item =>{
+  item.addEventListener('click',function(e){
+
+    let inputs = document.querySelectorAll('form input');
+
+    inputs.forEach(item => {
+    if(item.checkValidity()){
+      item.classList.remove('is-invalid');
+      item.classList.add('is-valid');
+    }else{
+      item.classList.remove('is-valid');
+      item.classList.add('is-invalid');
+    }
+
+    });
+    let form = document.querySelector('form');
+
+    if(!form.checkValidity()){
+      e.preventDefault();
+    }
+  });
+
+});

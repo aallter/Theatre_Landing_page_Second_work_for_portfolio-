@@ -33,10 +33,10 @@
               <img src="img/menu_img.png" alt="menu">
                 <ul>
                     <li><a href="">главная</a></li>
-                    <li><a href="">о театре</a></li>
-                    <li><a href="">наши постановки</a></li>
-                    <li><a href="">партнеры театра</a></li>
-                    <li><a href="">контакты</a></li>
+                    <li><a href="#about-link">о театре</a></li>
+                    <li><a href="#projects-link">наши постановки</a></li>
+                    <li><a href="#partners">партнеры театра</a></li>
+                    <li><a href="#contact">контакты</a></li>
                 </ul>
                 <span>+7 495 123-45-67</span>
             </nav>
@@ -49,10 +49,10 @@
                     <img src="img/window_close.png" id="close-menu" alt="close_menu">
                     <ul class="mobile-menu-ul">
                         <li><a href="">главная</a></li>
-                        <li><a href="">о театре</a></li>
-                        <li><a href="">наши постановки</a></li>
-                        <li><a href="">партнеры театра</a></li>
-                        <li><a href="">контакты</a></li>
+                        <li><a href="#about-link">о театре</a></li>
+                        <li><a href="#projects-link">наши постановки</a></li>
+                        <li><a href="#partners">партнеры театра</a></li>
+                        <li><a href="#contact">контакты</a></li>
                     </ul>
                     <a href=""> <img src="img/youtube-mobile.png" alt="youtube" ></a>
                     <a href=""> <img src="img/vk-mobile.png" alt="vk"></a></br>
@@ -94,7 +94,7 @@
 
         <!-- block about Theater -->
 
-        <article class="about flex-disp">
+        <article class="about flex-disp" id="about-link">
             <h2><span>о</span> театре</h2>
             <section class="info-about-theater">
                 <h3>Самый лучший театр СПБ</h3>
@@ -111,7 +111,7 @@
         </article>
 
         <!-- Art Slider -->
-        <article class="slide-block">
+        <article class="slide-block" id="projects-link">
             <h2><span>Наши</span> постановки</h2>
 
             
@@ -235,7 +235,7 @@
 
         <!-- Gazprom Block-->
 
-        <article class="slide-block">
+        <article class="slide-block" id="partners">
             <h2><span>Партнеры</span> театра</h2>
             <section class="gazprom flex-disp">
                 <img src="img/parthnerGazProm.png" alt="gazprom">
@@ -249,12 +249,37 @@
             </section>
         </article>
 
+        <!-- form  -->
+
+        <article class="info-form flex-disp" id="contact">
+            <h2><span>Cтать</span> Меценатом</h2>
+            <section>
+                <p>+7 (892) 123-45-22</p>
+                <p>+7 (812) 443-23-11</p>
+                <p>INFO@THEATHER.RU</p>
+                <p>Г.санкт-петербург,невский 140</p>
+            </section>
+            <section class="form-block">
+                <form >
+                    <input required pattern="^[A-za-zА-Яа-я]{1,}\s[A-za-zА-Яа-я]{1,}\s[A-za-zА-Яа-я]{1,}$" type="text" name="name" placeholder="Имя">
+                    <input required pattern="^\+\d{12}$"  type="tel" name="phone" placeholder="Телефон">
+                    <input required pattern="^{A-za-zА-Яа-я}$" type="text" name="company" placeholder="Компания">
+                    <input required pattern="^\S+@\S+\.\S+$" type="email" name="mail" placeholder="E-mail">
+                    <textarea name="massage" id="area" placeholder="Сообщение"></textarea>
+                    <p>
+                        Ваши данные не будут переданы третьим лицам, 100% вероятность. Конфиденциальность мы гарантируем, и защищаем персональные данные согласно законку ФЗ-52.
+                    </p>
+                    <input type="submit" class="but-send" value="Отправить" placeholder="Отправить">
+                </form>
+            </section>
+        </article>
+
 
         <!-- footer -->
 
         <footer class="flex-disp">
             <p>(с) Все права защищены. Большой театр. 2020 </p>
-            <p>Разработано d-e-n.ru,Vikktor Kolesnikov</p>
+            <p>Разработано d-e-n.ru,Viktor Kolesnikov</p>
         </footer>
     <!-- scripts bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
